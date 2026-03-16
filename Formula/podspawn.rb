@@ -5,21 +5,21 @@
 class Podspawn < Formula
   desc "Ephemeral SSH dev containers via native sshd"
   homepage "https://github.com/podspawn/podspawn"
-  version "0.1.0"
+  version "0.2.0"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/podspawn/podspawn/releases/download/v0.1.0/podspawn_0.1.0_darwin_amd64.tar.gz"
-      sha256 "9080582e640b8d40dfc8670b9ee2f5414d4c0acaf90902d9137b4928fa4df461"
+      url "https://github.com/podspawn/podspawn/releases/download/v0.2.0/podspawn_0.2.0_darwin_amd64.tar.gz"
+      sha256 "71f8d8ee0b7d536cd8e4ae6a58ccbe76d47602970568781e78636614b6bc593d"
 
       define_method(:install) do
         bin.install "podspawn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/podspawn/podspawn/releases/download/v0.1.0/podspawn_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c3894145e343fd72842c82bd8121cd1ce8da565f6ddf2a540c6622ee46a93e4d"
+      url "https://github.com/podspawn/podspawn/releases/download/v0.2.0/podspawn_0.2.0_darwin_arm64.tar.gz"
+      sha256 "c8b93dedce49021a976da68ce4d8ae5c452c82bae0647757b76599552fa00c32"
 
       define_method(:install) do
         bin.install "podspawn"
@@ -29,15 +29,15 @@ class Podspawn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/podspawn/podspawn/releases/download/v0.1.0/podspawn_0.1.0_linux_amd64.tar.gz"
-      sha256 "9483d9a961a15bfe5a3efe7f81314fb13579ec61642c7f9b910238530c7790d8"
+      url "https://github.com/podspawn/podspawn/releases/download/v0.2.0/podspawn_0.2.0_linux_amd64.tar.gz"
+      sha256 "1a798abf3d9f33ab84daf00822ae55b23757e455fb9c0e12a8ef347669fbbaf3"
       define_method(:install) do
         bin.install "podspawn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/podspawn/podspawn/releases/download/v0.1.0/podspawn_0.1.0_linux_arm64.tar.gz"
-      sha256 "6b747a915b6936ae279b70044a7134fd166a73a6d43cdc841ff2e7a596e670f0"
+      url "https://github.com/podspawn/podspawn/releases/download/v0.2.0/podspawn_0.2.0_linux_arm64.tar.gz"
+      sha256 "c4f4801ee613941a6db2e91ac03672d82269169a27eb5ae1145d615d229d9858"
       define_method(:install) do
         bin.install "podspawn"
       end
