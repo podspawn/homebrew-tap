@@ -15,12 +15,12 @@ cask "podspawn" do
     on_intel do
       url "https://github.com/podspawn/podspawn/releases/download/v#{version}/podspawn_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/podspawn/podspawn"
-      sha256 "c56a399fba21106392744c2c3b3bc5ed01c159401b827548d4222590279bbb16"
+      sha256 "76191069406c801c698d7e278dd5458ff6f69c0fa45fde5c65652a658922613c"
     end
     on_arm do
       url "https://github.com/podspawn/podspawn/releases/download/v#{version}/podspawn_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/podspawn/podspawn"
-      sha256 "714c1a3e1f08907e769cd935b00f5797266e84119a2e52dc2d6ec85c3c6d70fc"
+      sha256 "f8a33ea3120724f90eee5add92e0be70b6fe87def0dfc306e86e6e9cf6686673"
     end
   end
 
@@ -28,12 +28,12 @@ cask "podspawn" do
     on_intel do
       url "https://github.com/podspawn/podspawn/releases/download/v#{version}/podspawn_#{version}_linux_amd64.tar.gz",
         verified: "github.com/podspawn/podspawn"
-      sha256 "ecec27d68bd133f99c82c9486390b18d528a6149be3428fecd1812a4fe06a11e"
+      sha256 "b8145c4f6c4462bda17ac2364f5ebd879942b7620ec04382a617b90c733beb2f"
     end
     on_arm do
       url "https://github.com/podspawn/podspawn/releases/download/v#{version}/podspawn_#{version}_linux_arm64.tar.gz",
         verified: "github.com/podspawn/podspawn"
-      sha256 "f3fd516fc2db8b7dc2582403580793292d574945ca73d183420939c9a17743e3"
+      sha256 "3021cfdc73515d53d668c45a87dda0714c14e434cb5b1f2d549bffbff58bd4ca"
     end
   end
 
