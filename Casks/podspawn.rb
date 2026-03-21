@@ -3,7 +3,7 @@ cask "podspawn" do
   name "podspawn"
   desc "Ephemeral SSH dev containers via native sshd"
   homepage "https://podspawn.dev"
-  version "0.4.3"
+  version "0.4.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "podspawn" do
     on_intel do
       url "https://github.com/podspawn/podspawn/releases/download/v#{version}/podspawn_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/podspawn/podspawn"
-      sha256 "6775adb7156261c54bef486c465f837c78ff342e4dcb809c80f94215eaa8cc03"
+      sha256 "f21071c97a49ec496f4fd2472c9c557fba2f37dbd02cd2bf0127e5506151f542"
     end
     on_arm do
       url "https://github.com/podspawn/podspawn/releases/download/v#{version}/podspawn_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/podspawn/podspawn"
-      sha256 "e2431cacf8fa8953406a01b7969609f5b83b8a757119b7012d529c115049c520"
+      sha256 "025e4f87d2e8775a579921e9ab77b03d67120e939afccdf7a1b7f94ec8b42fe5"
     end
   end
 
@@ -28,12 +28,12 @@ cask "podspawn" do
     on_intel do
       url "https://github.com/podspawn/podspawn/releases/download/v#{version}/podspawn_#{version}_linux_amd64.tar.gz",
         verified: "github.com/podspawn/podspawn"
-      sha256 "f3f6524eb0c5f1e5b2e21edc20c635ea52ce34985ac429b18c0336145b41b14e"
+      sha256 "9ee5c4aed8b5bebfd09202755d88469112db9a1b75509994b49b33c69c3457f7"
     end
     on_arm do
       url "https://github.com/podspawn/podspawn/releases/download/v#{version}/podspawn_#{version}_linux_arm64.tar.gz",
         verified: "github.com/podspawn/podspawn"
-      sha256 "f4fb35b09d32bca8acdcea0d50077ebc0a1972c18d31fe4ea6e7074da1bab96c"
+      sha256 "27d5e51594d547948701e50d823fdff42217a1253292cc2f13aff2bd3edf4525"
     end
   end
 
